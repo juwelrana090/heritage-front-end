@@ -1,4 +1,5 @@
 const colors: any = {
+  white: '#FFFFFF',
   black: '#111111',
   'blue-500': '#0059B1'
 };
@@ -145,6 +146,96 @@ const Icon = ({
           </svg>
         );
 
+      case 'search-magnifer':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke={f}
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-search"
+          >
+            <circle cx={11} cy={11} r={8} />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        );
+
+      case 'play':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 496.158 496.158"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <path
+                d="M496.158 248.085C496.158 111.064 385.088.003 248.082.003 111.07.002 0 111.062 0 248.085c0 137.002 111.07 248.071 248.083 248.071 137.005-.001 248.075-111.07 248.075-248.071z"
+                style={{}}
+                fill={f}
+                data-original={f}
+                className=""
+                opacity={1}
+              />
+              <path
+                d="M370.805 235.242 195.856 127.818c-4.776-2.934-11.061-3.061-15.951-.322a15.784 15.784 0 0 0-8.071 13.762v214a15.794 15.794 0 0 0 8.046 13.752 15.824 15.824 0 0 0 7.725 2.02c2.897 0 5.734-.797 8.205-2.303l174.947-106.576c4.657-2.836 7.556-7.986 7.565-13.44.01-5.453-2.87-10.615-7.517-13.469z"
+                style={{}}
+                fill="#ffffff"
+                data-original="#ffffff"
+                className=""
+              />
+            </g>
+          </svg>
+        );
+
+      case 'home':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 24 24"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <g fill={f}>
+                <path
+                  d="M9.5 17.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
+                  fill={f}
+                  opacity={1}
+                  data-original={f}
+                />
+                <path
+                  fillRule="evenodd"
+                  d="M14.169 2.575a3.5 3.5 0 0 0-4.338 0l-6.5 5.132A3.5 3.5 0 0 0 2 10.454V18.5A3.5 3.5 0 0 0 5.5 22h13a3.5 3.5 0 0 0 3.5-3.5v-8.046a3.5 3.5 0 0 0-1.331-2.747zm-3.718.785a2.5 2.5 0 0 1 3.098 0l6.5 5.132A2.5 2.5 0 0 1 21 10.454V18.5a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-8.046a2.5 2.5 0 0 1 .95-1.962z"
+                  clipRule="evenodd"
+                  fill={f}
+                  opacity={1}
+                  data-original={f}
+                />
+              </g>
+            </g>
+          </svg>
+        );
+
       case 'empty':
         return <></>;
 
@@ -155,7 +246,7 @@ const Icon = ({
 
   return (
     <span
-      className={`flex items-center border-none bg-transparent outline-none ${!noHoverEffect && 'hover:opacity-80'} ${className}`}
+      className={`flex items-center border-none bg-transparent outline-none ${className}`}
       style={style}
     >
       {getIcon()}

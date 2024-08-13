@@ -3,6 +3,56 @@
 @tailwind utilities;
 
 @layer base {
+  .header {
+    @apply w-full h-[96px] bg-[#ECF5FF] fixed top-0 start-0 z-40 flex justify-center items-center shadow-lg shadow-[#001426]/10;
+  }
+
+  .top-hero-section {
+    @apply w-full h-[544px] mt-[96px] relative flex justify-center items-center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .top-body {
+    @apply w-full h-[544px] absolute flex justify-center items-center;
+    padding: 120px 112px 120px 112px;
+    gap: 48px;
+    opacity: 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.72) 32.39%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+  }
+
+  .top-title {
+    @apply text-[64px] font-bold font-montserrat leading-[72px] tracking-[-0.02em] mb-8;
+  }
+
+  .top-subtitle {
+    @apply text-[16px] font-medium font-poppins;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .bg-video__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .find-property-btn {
+    @apply w-[210px] h-[56px] rounded-[4px] flex justify-center items-center gap-3 transition ease-in-out delay-150;
+  }
 }
 
 @layer utilities {
