@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { title } from 'process';
 
 interface ItemProps {
   title: string;
-  items: string[];
+  items: any;
 }
 
 const FooterMenuItem = ({ title, items }: ItemProps) => {
@@ -21,10 +22,10 @@ const FooterMenuItem = ({ title, items }: ItemProps) => {
             {items.map((item: any, index: number) => (
               <li key={index}>
                 <Link
-                  href="#"
+                  href={item?.link}
                   className="text-[16px] text-[#475467] font-semibold font-montserrat"
                 >
-                  {item}
+                  {item?.title}
                 </Link>
               </li>
             ))}

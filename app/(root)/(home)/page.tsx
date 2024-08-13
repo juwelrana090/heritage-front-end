@@ -5,7 +5,7 @@ import {
   OtherServices
 } from '@/components/home';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main className="w-full bg-white">
       <TopHeroSection />
@@ -40,4 +40,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
