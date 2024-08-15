@@ -9,11 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        inter: ['var(--font-inter)'],
         montserrat: ['var(--font-montserrat)'],
         poppins: ['var(--font-poppins)']
       },
       colors: {
-        'blue-50': '#E9EBF8',
+        'blue-50': '#ECF5FF',
         'blue-100': '#B0CCE7',
         'blue-200': '#8AB3DB',
         'blue-300': '#5490CB',

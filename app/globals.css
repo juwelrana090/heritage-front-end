@@ -53,6 +53,36 @@
   .find-property-btn {
     @apply w-[210px] h-[56px] rounded-[4px] flex justify-center items-center gap-3 transition ease-in-out delay-150;
   }
+
+  .property-search-box {
+    @apply w-full h-[455px] mt-[96px] relative;
+  }
+
+  .bg-gradient-black {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 22.33%,
+      rgba(0, 0, 0, 0.64) 100%
+    );
+  }
+
+  .search-bg-image {
+    @apply w-full h-[309px] bg-gradient-black bg-[url('/assets/img/bg/modern-spacious-room-with-large-panoramic-window.jpg')] bg-cover bg-center bg-no-repeat;
+  }
+
+  .search-type {
+    @apply inline-block py-2 text-gray-600 text-[16px] font-medium font-inter leading-[24px] border-b-2 border-transparent hover:text-blue-500 hover:border-blue-500 rounded-t-lg cursor-pointer;
+  }
+
+  .search-type-active {
+    @apply inline-block py-2 text-blue-500 text-[16px] font-medium font-inter leading-[24px] border-b-2 border-blue-500 rounded-t-lg cursor-pointer;
+  }
+
+  .select {
+    @apply !bg-[url('/assets/img/icons/down-arrow.svg')] !bg-no-repeat;
+    background-size: 24px !important;
+    background-position: right 12px center !important;
+  }
 }
 
 @layer utilities {

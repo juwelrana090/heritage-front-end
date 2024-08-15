@@ -1,8 +1,16 @@
 import type { Metadata } from 'next';
-import { Montserrat, Poppins } from 'next/font/google';
+import { Inter, Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
 
 // Fonts
+const inter = Inter({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter'
+});
+
 const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   style: ['normal', 'italic'],
@@ -32,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`w-screen h-screen ${montserrat.variable} ${poppins.variable}`}
+        className={`w-screen h-screen ${montserrat.variable} ${poppins.variable} ${inter.variable}`}
       >
         {children}
       </body>

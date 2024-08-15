@@ -1,7 +1,27 @@
 const colors: any = {
   white: '#FFFFFF',
   black: '#111111',
-  'blue-500': '#0059B1'
+  'gray-1': '#6B7280',
+  'blue-50': '#E9EBF8',
+  'blue-100': '#B0CCE7',
+  'blue-200': '#8AB3DB',
+  'blue-300': '#5490CB',
+  'blue-400': '#337AC1',
+  'blue-500': '#0059B1',
+  'blue-600': '#0051A1',
+  'blue-700': '#003F7E',
+  'blue-800': '#003161',
+  'blue-900': '#00254A',
+  'orange-50': '#FDF0E7',
+  'orange-100': '#FAD0B5',
+  'orange-200': '#F7B992',
+  'orange-300': '#F49860',
+  'orange-400': '#F18541',
+  'orange-500': '#EE6611',
+  'orange-600': '#D95D0F',
+  'orange-700': '#A9480C',
+  'orange-800': '#833809',
+  'orange-900': '#642B07'
 };
 
 type IconProps = {
@@ -165,6 +185,40 @@ const Icon = ({
           </svg>
         );
 
+      case 'search':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 512 512"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <path
+                d="M225.474 0C101.151 0 0 101.151 0 225.474c0 124.33 101.151 225.474 225.474 225.474 124.33 0 225.474-101.144 225.474-225.474C450.948 101.151 349.804 0 225.474 0zm0 409.323c-101.373 0-183.848-82.475-183.848-183.848S124.101 41.626 225.474 41.626s183.848 82.475 183.848 183.848-82.475 183.849-183.848 183.849z"
+                fill={f}
+                opacity={1}
+                data-original={f}
+                className=""
+              />
+              <path
+                d="M505.902 476.472 386.574 357.144c-8.131-8.131-21.299-8.131-29.43 0-8.131 8.124-8.131 21.306 0 29.43l119.328 119.328A20.74 20.74 0 0 0 491.187 512a20.754 20.754 0 0 0 14.715-6.098c8.131-8.124 8.131-21.306 0-29.43z"
+                fill={f}
+                opacity={1}
+                data-original={f}
+                className=""
+              />
+            </g>
+          </svg>
+        );
+
       case 'play':
         return (
           <svg
@@ -231,6 +285,124 @@ const Icon = ({
                   opacity={1}
                   data-original={f}
                 />
+              </g>
+            </g>
+          </svg>
+        );
+
+      case 'location':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 24 24"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <path
+                d="M12 .021A10.077 10.077 0 0 0 1.935 10.087c0 5.274 8.166 12.329 9.1 13.117l.967.817.967-.817c.932-.788 9.1-7.843 9.1-13.117A10.077 10.077 0 0 0 12 .021Zm0 20.043c-3.065-2.792-7.067-7.328-7.067-9.977a7.067 7.067 0 1 1 14.134 0c0 2.644-4.003 7.182-7.067 9.977Z"
+                fill={f}
+                opacity={1}
+                data-original={f}
+                className=""
+              />
+              <circle
+                cx={12}
+                cy="10.002"
+                r="2.997"
+                fill={f}
+                opacity={1}
+                data-original={f}
+                className=""
+              />
+            </g>
+          </svg>
+        );
+
+      case 'home-location':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 24 24"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+          >
+            <g>
+              <path
+                d="M22.692 7.447 14.1.725a3.4 3.4 0 0 0-4.2 0L1.308 7.447A3.39 3.39 0 0 0 0 10.132V24h24V10.132a3.39 3.39 0 0 0-1.308-2.685ZM21 21H3V10.132a.412.412 0 0 1 .157-.322l8.591-6.723a.408.408 0 0 1 .5 0l8.595 6.723a.412.412 0 0 1 .157.322ZM12 8a5 5 0 0 0-3.523 8.547L12 19.994l3.535-3.458A5 5 0 0 0 12 8Zm0 7a2 2 0 1 1 2-2 2 2 0 0 1-2 2Z"
+                fill={f}
+                opacity={1}
+                data-original={f}
+              />
+            </g>
+          </svg>
+        );
+
+      case 'dollar-circle':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 512 512"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <path
+                d="M256 4.8C117.7 4.8 5 117.3 5 255.8s112.5 251 251 251 251-112.5 251-251-112.7-251-251-251zm84.1 343c-5.4 10.2-12.8 18.7-21.7 25.5-9 6.6-19 11.5-30.2 14.9-3.1.9-6.3 1.8-9.5 2.3v15.1c0 12.6-10.2 22.8-22.8 22.8s-23-10.2-23-23v-13.8c-7-1.1-14-2.5-20.7-4.5-13.3-4-24.8-10.6-35.2-18-4.5-3.1-10.4-10.1-10.4-10.1-2.3-2.3-5.4-6.1-5.4-14.2 0-11.7 9.5-21.4 21-21.2 7.7 0 15.1 6.3 15.1 6.3 7.5 6.1 11.7 9.9 19.2 13.1 11 4.9 23.7 7.2 37.7 7.2 8.6 0 16.7-1.6 24.3-4.7 7.2-3.1 13.1-7.4 17.8-12.9 4.3-5.4 6.5-11.9 6.5-19.8 0-10.2-3.8-19-11.3-27.1-7.7-8.1-20.8-13.1-39.2-15.3-17.6-1.8-33.4-6.3-46.7-13.3-13.5-7-24.3-16.4-31.6-27.7-7.4-11.3-11.1-24.4-11.1-38.8 0-15.6 4.5-29.3 13.1-40.6 8.6-11 20.1-19.6 34.5-25.3 7.2-2.9 14.6-5.2 22.5-6.6v-15.3c0-12.6 10.2-22.8 22.8-22.8s23 10.2 23 23v14.7c5.7.9 11 2.3 15.8 4.1 10.8 4 20.1 9.7 27.8 16.9 4.3 4.1 8.3 8.6 11.9 13.5.5.7 1.3 1.4 1.8 2.2 2.3 3.2 3.6 7.4 3.6 11.9 0 11.7-11.7 20.1-21.2 21-9 .9-17.4-9.3-17.4-9.3-3.8-4.9-8.1-9-13.1-12.4-7.5-5-18.1-7.7-31.6-7.9-14.4-.2-26.2 2.7-35.6 8.8-8.6 5.6-12.8 13.5-12.8 24.6 0 5.7 1.3 11.5 4 16.9 2.5 5 7.5 9.7 14.9 13.8 7.7 4.3 19.6 7.4 35 9.2 25.9 2.5 46.7 10.8 62.3 24.6 16 14 24.1 33.1 24.1 56.6-.1 13.5-2.8 25.4-8.2 35.6z"
+                fill={f}
+                opacity={1}
+                data-original={f}
+                className=""
+              />
+            </g>
+          </svg>
+        );
+
+      case 'down-arrow-circle':
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={size}
+            height={size}
+            x={0}
+            y={0}
+            viewBox="0 0 32 32"
+            enableBackground="new 0 0 512 512"
+            xmlSpace="preserve"
+            className=""
+          >
+            <g>
+              <g
+                fill="none"
+                stroke={f}
+                strokeLinejoin="round"
+                strokeMiterlimit={10}
+                strokeWidth={2}
+              >
+                <circle cx={16} cy={16} r={15} fill="" opacity={1} />
+                <path d="M16 4v23M24 19l-8 8-8-8" fill="" opacity={1} />
               </g>
             </g>
           </svg>
