@@ -28,56 +28,146 @@ const Footer = () => {
               <FooterMenuItem
                 title="Product"
                 items={[
-                  'Overview',
-                  'Features',
-                  'Solutions',
-                  'Tutorials',
-                  'Pricing',
-                  'Releases'
+                  {
+                    link: '#',
+                    title: 'Overview'
+                  },
+                  {
+                    link: '#',
+                    title: 'Features'
+                  },
+                  {
+                    link: '#',
+                    title: 'Solutions'
+                  },
+                  {
+                    link: '#',
+                    title: 'Tutorials'
+                  },
+                  {
+                    link: '#',
+                    title: 'Pricing'
+                  },
+                  {
+                    link: '#',
+                    title: 'Releases'
+                  }
                 ]}
               />
               <FooterMenuItem
                 title="Company"
                 items={[
-                  'About us',
-                  'Careers',
-                  'Press',
-                  'News',
-                  'Media kit',
-                  'Contact'
+                  {
+                    link: '/about-us',
+                    title: 'About us'
+                  },
+                  {
+                    link: '#',
+                    title: 'Careers'
+                  },
+                  {
+                    link: '#',
+                    title: 'Press'
+                  },
+                  {
+                    link: '#',
+                    title: 'News'
+                  },
+                  {
+                    link: '#',
+                    title: 'Media kit'
+                  },
+                  {
+                    link: '#',
+                    title: 'Contact'
+                  }
                 ]}
               />
               <FooterMenuItem
                 title="Resources"
                 items={[
-                  'Blog',
-                  'Newsletter',
-                  'Events',
-                  'Help centre',
-                  'Tutorials',
-                  'Support'
+                  {
+                    link: '#',
+                    title: 'Blog'
+                  },
+                  {
+                    link: '#',
+                    title: 'Newsletter'
+                  },
+                  {
+                    link: '#',
+                    title: 'Events'
+                  },
+                  {
+                    link: '#',
+                    title: 'Help centre'
+                  },
+                  {
+                    link: '#',
+                    title: 'Tutorials'
+                  },
+                  {
+                    link: '#',
+                    title: 'Support'
+                  }
                 ]}
               />
               <FooterMenuItem
                 title="Social"
                 items={[
-                  'Twitter',
-                  'LinkedIn',
-                  'Facebook',
-                  'GitHub',
-                  'AngelList',
-                  'Dribbble'
+                  {
+                    link: '#',
+                    title: 'Twitter'
+                  },
+                  {
+                    link: '#',
+                    title: 'LinkedIn'
+                  },
+                  {
+                    link: '#',
+                    title: 'Facebook'
+                  },
+                  {
+                    link: '#',
+                    title: 'GitHub'
+                  },
+                  {
+                    link: '#',
+                    title: 'AngelList'
+                  },
+                  {
+                    link: '#',
+                    title: 'Dribbble'
+                  }
                 ]}
               />
               <FooterMenuItem
                 title="Legal"
                 items={[
-                  'Terms',
-                  'Privacy',
-                  'Cookies',
-                  'Licenses',
-                  'Settings',
-                  'Contact'
+                  {
+                    link: '#',
+                    title: 'Terms'
+                  },
+                  {
+                    link: '#',
+                    title: 'Privacy'
+                  },
+                  {
+                    link: '#',
+                    title: 'Cookies'
+                  },
+                  {
+                    link: '#',
+                    title: 'Licenses'
+                  },
+                  {
+                    link: '#',
+                    title: 'Settings'
+                  },
+                  {
+                    link: '#',
+                    title: 'Contact'
+                  }
                 ]}
               />
             </div>
